@@ -1,5 +1,7 @@
 FROM registry.access.redhat.com/ubi8/ubi-minimal:latest as builder
 
+MAINTAINER "Vathsala . <vaths367@in.ibm.com>"
+
 #This docker file is generated as basis of "https://github.com/bitnami/bitnami-docker-redis/blob/master/6.2/debian-10/Dockerfile"
 
 RUN microdnf install -y glibc-devel glibc-headers gcc-c++ golang git make cmake findutils
